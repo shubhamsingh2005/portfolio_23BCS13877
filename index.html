@@ -1,86 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Singh | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-    <header>
-    <h1>Shubham Singh</h1>
-    <p>Welcome to my portfolio website!</p>
-    <img src = "SquarePic_20230315_12172774.jpg" width = "200px" height = "200px" />
-    </header>
-</header>
-</section> <main>
-<hr>
-<nav>
-    <h2> Links</h2>
-    <a href="#">GitHub</a><br>
-    <a href="https://www.linkedin.com/in/shubham-singh-848a82268/">LinkedIn</a><br>
-    <a href="#">Leetcode</a><br>
-</nav> <hr>
-<section>
-    <h2>Skills</h2>
+  <!-- HEADER -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="SquarePic_20230315_12172774.jpg" alt="Profile Picture" class="profile-img">
+      <h1>Shubham Singh</h1>
+      <p>Welcome to my portfolio website!</p>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
     <ul>
-    <li>Java</li>
-    <li>C++</li>
-    <li>Communication Skills</li>
-    <li>Python</li>
+      <li><a href="#">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/shubham-singh-848a82268/" target="_blank">LinkedIn</a></li>
+      <li><a href="#">Leetcode</a></li>
     </ul>
-</section> <hr>
-<section>
-    <h2>Projects</h2>
-    <ol type = "I">
-        <li><strong>GoodNotes - Notes Management System</strong></li> <br>
-        Its a web application that allows users to create, edit, and manage their notes efficiently. It includes features like note categorization, search functionality, and a user-friendly interface.<br>
-        <li><strong>CRMS</strong></li><br>
-        Its a comprehensive customer relationship management system that helps businesses manage interactions with clients and streamline processes. It offers features like contact management, sales tracking, and reporting tools.
-    </ol>
-</section><hr>
+  </nav>
 
-<section>
-    <h2>Qualifications</h2>
-    <table border=""1>
-        <tr>
-            <th> Standard </th>
-            <th> Institute Name </th>
-            <th> Year of Passing </th>
-            <th> Marks/CGPA </th>
-        </tr>
-        <tr>
-            <td> 10th </td>
-            <td> St. Xavier's International School, Patiala </td>
-            <td> 2021 </td>
-            <td> 82% </td>
-        </tr>
-        <tr>
-            <td> 12th </td>
-            <td> Multipurpose Senior Secondary School, Patiala </td>
-            <td> 2023 </td>
-            <td> 94.4% </td>
-        </tr>
-        <tr>
-            <td> B.E CSE </td>
-            <td> Chandigarh University, Punjab </td>
-            <td> 2027 </td>
-            <td> 8+ </td>
-        </tr>
-    </table>
-</section><br><hr>
-<section>   
-    <h2>Contact</h2>
-    <form action = "script.js" method = "POST">
-        <input type = "text" id = "name" placeholder = "Enter the name"/> <br>
-        <input type = "email" id = "email" placeholder = "Enter your email"/><br>
-        <textarea id = "area" rows = "20" cols = "20" id = "message" >please drop feedaback </textarea><br>
-        <button type = "submit">Submit</button>
-    </form>
+  <main>
+    <!-- SKILLS -->
+    <section class="section">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Java</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>Communication Skills</li>
+      </ul>
+    </section>
 
-</section><hr> </main>
-<footer>
+    <!-- PROJECTS -->
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>GoodNotes - Notes Management System</h3>
+          <p>A web app that allows users to create, edit, and manage notes efficiently with categorization, search, and user-friendly design.</p>
+        </div>
+        <div class="project-card">
+          <h3>CRMS</h3>
+          <p>A comprehensive CRM system to manage client interactions, track sales, and generate reports for businesses.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALIFICATIONS -->
+    <section class="section">
+      <h2>Qualifications</h2>
+      <table class="qualifications">
+        <thead>
+          <tr>
+            <th>Standard</th>
+            <th>Institute</th>
+            <th>Year</th>
+            <th>Marks/CGPA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10th</td>
+            <td>St. Xavier's International School, Patiala</td>
+            <td>2021</td>
+            <td>82%</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>Multipurpose Senior Secondary School, Patiala</td>
+            <td>2023</td>
+            <td>94.4%</td>
+          </tr>
+          <tr>
+            <td>B.E CSE</td>
+            <td>Chandigarh University, Punjab</td>
+            <td>2027</td>
+            <td>8+</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <h2>Contact</h2>
+      <form class="contact-form" action="script.js" method="POST">
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <textarea id="message" rows="5" placeholder="Please drop feedback"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
     <p>© 2025 Shubham Singh. All rights reserved.</p>
-</footer>
+  </footer>
 </body>
 </html>
